@@ -1,1 +1,2 @@
-# CryptoSentiment
+# CryptoSentiment Dokumentation
+
