@@ -11,7 +11,7 @@
   
 ## Verwendete Tools
   ### Pandas
-  Datenbearbetung
+  Datenverarbeitung
 
 ## Verwendete Daten
   
