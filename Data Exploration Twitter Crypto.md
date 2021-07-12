@@ -77,10 +77,16 @@ Tweets werden daraufhin in der hierfür angelegten Datei mit Json syntax gespeic
 Link zu unserer VM umgebung: https://drive.google.com/file/d/1zEigml1mJAgY2jle0-eTY0Pw3vBQvy5C/view?usp=sharing
 
 ## **Datenverarbeitung**
+<<<<<<< HEAD
 
 Die Tweets beinhalten eine Reihe an Informationen, welche für die spätere Date Auswertung von Bedeutung sein könnten (mögliche Korrelationen). Aus diesem Grund ist es zumindest anfänglich von Vorteil die scheinbar überflüssigen Infor-mationen nicht zu verwerfen. Hierfür empfiehlt sich die Arbeit mittels eines Da-taFrames dessen Spalten sich einfach auswerten/bearbeiten lassen. 
 Bevor die Daten in das Modell eingeschleust werden können, sollten sie berei-nigt werden. Hierfür betrachtet man zuerst den Texten und macht jegliche Zei-chenkombination aus welche man herausfiltern möchte. Oft sind das Twitterna-men, URL´s… Obwohl auf den ersten Blick Emojis nicht dazu gehören werden diese auch herausgefiltert da das Modell mittels Standard Tweets trainiert wird, die Crypto Twitter-community jedoch ihre ganze eigenen Emojicon Sprache be-sitzt. Aus demselben Grund sollte man auch alle nicht englischen Tweets lö-schen da das Modell auf einem rein englischen Datensatz trainiert wurde.
 
+=======
+Die Tweets beinhalten eine Reihe an Informationen, welche für die spätere Date Auswertung von Bedeutung sein könnten (mögliche Korrelationen). Aus diesem Grund ist es zumindest anfänglich von Vorteil die scheinbar überflüssigen Informationen nicht zu verwerfen. Hierfür empfiehlt sich die Arbeit mittels eines DataFrames dessen Spalten sich einfach auswerten/bearbeiten lassen.
+
+Bevor die Daten in das Modell eingeschleust werden können, sollten sie bereinigt werden. Hierfür betrachtet man zuerst den Texten und macht jegliche Zeichenkombination aus welche man herausfiltern möchte. Oft sind das Twitternamen, URL´s… Obwohl auf den ersten Blick Emojis nicht dazu gehören werden diese auch herausgefiltert da das Modell mittels Standard Tweets trainiert wird, die Crypto Twitter-community jedoch ihre ganze eigenen Emojicon Sprache besitzt. Aus demselben Grund sollte man auch alle nicht englischen Tweets löschen da das Modell auf einem rein englischen Datensatz trainiert wurde.
+>>>>>>> 44f02773d151fca5b0be1651e714531c11e11831
 
 ## **Erstellung des Modells**
 
