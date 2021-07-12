@@ -26,4 +26,4 @@
   Für das Training des Modells wurde mit Hilfe von nltk ein Trainingsdatensatz bezogen.
   
 ## Dokumentation
-  <a href="https://github.com/Slurbisaur/CryptoSentiment/blob/main/Dokumnetation.docx">Hier</a> finden Sie unsere Dokumnentation.
+  <a href="https://github.com/Slurbisaur/CryptoSentiment/blob/main/Dokumnetation.docx">Hier</a> finden Sie unsere Dokumentation.
