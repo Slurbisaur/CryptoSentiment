@@ -73,7 +73,8 @@ Geräte IP eingeben an Stelle des Listerners (mit welcher ip wird verbunden) Ver
 	run python: (Scriptausführung hier geben wir an was wir genau wollen und wie wir es beziehen (sprich Server configs und Schlüsselwörter), außerdem verifizieren wir uns gegenüber Twitter am Anfang nach den Package Imports)
     	  python3 Tweets.py .
 
-Tweets werden daraufhin in der hierfür angelegten Datei mit Json syntax gespeichert.
+Tweets werden daraufhin in der hierfür angelegten Datei mit Json syntax gespeichert. 
+Link zu unserer VM umgebung: https://drive.google.com/file/d/1zEigml1mJAgY2jle0-eTY0Pw3vBQvy5C/view?usp=sharing
 
 ## **Datenverarbeitung**
 ## **Erstellung des Modells**
