@@ -10,13 +10,13 @@
   Sentiment-Analyse von Twitter Daten in Bezug auf die Crypto-Currency Dogecoin
   
 ## Verwendete Tools
-  ### Pandas
-  ### Seaborn
-  ### Numpy
-  ### Tweepy
-  ### NLTK
-  ### SKLearn
-  ### alle weiteren verwendeten Tools befinden sich in der Requirements.txt
+  - Pandas
+  - Seaborn
+  - Numpy
+  - Tweepy
+  - NLTK
+  - SKLearn
+  - alle weiteren verwendeten Tools befinden sich in der Requirements.txt
 
 ## Verwendete Daten
   Die verwendeten Daten wurden von der Gruppe mit Hilfe von der Twitter API direkt von Twitter bezogen.
