@@ -24,6 +24,12 @@
   Auswertung vorbereitet.
 
   Für das Training des Modells wurde mit Hilfe von nltk ein Trainingsdatensatz bezogen.
-  
+
+## Auszuführung
+  Als erstes sollten mittels "pip install -r requirements.txt" überprüft werden ob py die requirements erfüllt.
+  Das Modell wird mit dem starten der __main__.ipynb Datei trainiert. 
+  Hierbei sollte drauf geachtet werden, dass die zu analysierende Datei bereit liegt. 
+  Schlussendlich kann der sentiment-Dataframe durch starten der Explorative Data Analysis.ipynb visualisiert werden.
+
 ## Dokumentation
   <a href="https://github.com/Slurbisaur/CryptoSentiment/blob/main/Dokumnetation.docx">Hier</a> finden Sie unsere Dokumentation.
