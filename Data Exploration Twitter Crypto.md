@@ -108,6 +108,7 @@ Als tokenizer wird bei Bedarf der von ntlk bereitgestellte WordNetLemmatizer ver
 
 ## **Auswertung**
 <img src="https://github.com/Slurbisaur/CryptoSentiment/blob/main/Data/Plots.PNG" width="1200" height="600">
+
 # **Fazit und Ausblick**
 Die Durchführung des Projekts hat mehrere Probleme einer Sentimentanalyse im Bezug auf Tweets offenbart. Ein Problem ist, dass ein Machine Learning Algorithmus Sarkasmus, Memes und Humor nur schlecht erkennen kann. Dadurch können manche Tweets durch den Algorithmus nicht richtig zugeordnet werden. Des Weiteren ist es in diesem Modell nicht möglich Bilder zu interpretieren, was bedeutet, dass viele Tweets nicht analysiert werden können.
 
