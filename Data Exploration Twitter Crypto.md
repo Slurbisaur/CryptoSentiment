@@ -90,10 +90,15 @@ Bevor die Daten in das Modell eingeschleust werden können, sollten sie bereinig
 
 ## **Erstellung des Modells**
 
+Um die Sentimentanalyse durchzuführen, wird ein Machine-Learning-Modell trainiert. Die Entscheidung ist dabei auf einen Naive-Bayes Klassifikator mit multinomialer Verteilung gefallen: multinomialNB aus dem Paket sklearn.
+Dieser Klassifikator kann gut mit gezählten Wörtern umgehen und benötigt deshalb als Eingabe die Anzahl bestimmter Wörter pro Tweet. Dabei müssen alle verwertbaren Wörter bereits beim Training bekannt sein.
+Das wird erreicht, indem ein Vectorizer vorgeschaltet wird. Der tfifdvectorizer von sklearn spaltet die Tweets in Wörter (oder Kombinationen von Wörtern) und gewichtet diese Tokens invers zu ihrer Häufigkeit in den Daten.
+Beides zusammen wird in einer sklearn-pipeline vereint, welche im weiteren Verlauf unser Modell wird. Für das Training wird der sample_tweets-Datensatz von nltk verwendet.
+
 ## **Optimierung des Modells**
 
 Das Modell liefert bereits mit direktem Training gute Ergebnisse auf den Testdaten. Diese Ergebnisse können jedoch durch Hyperparameteroptimierung verbessert werden. Dafür werden die Ansätze Grid Search und Random Search mit dem ursprünglichen Modell verglichen.
-Beide Ansätze verlangen ein Parameter-Grid, in dem die Kandidaten für Hyperparameter angegeben werden. Es enthält hier sowohl Parameter für den Vectorizer, als auch für das MultinomialNB-Modell.
+Beide Ansätze verlangen ein Parameter-Grid, in dem die Kandidaten für Hyperparameter angegeben werden. Es enthält hier sowohl Parameter für den Vectorizer, als auch für den MultinomialNB-Klassifikator.
 
 Bei MultinomialNB werden die Parameter alpha und fit_prior optimiert.
 Alpha gibt an, wie viel Laplace-Smoothing angewandt wird.
