@@ -78,6 +78,34 @@ Link zu unserer VM umgebung: https://drive.google.com/file/d/1zEigml1mJAgY2jle0-
 
 ## **Datenverarbeitung**
 ## **Erstellung des Modells**
+
+## **Optimierung des Modells**
+
+Das Modell liefert bereits mit direktem Training gute Ergebnisse auf den Testdaten. Diese Ergebnisse können jedoch durch Hyperparameteroptimierung verbessert werden. Dafür werden die Ansätze Grid Search und Random Search mit dem ursprünglichen Modell verglichen.
+Beide Ansätze verlangen ein Parameter-Grid, in dem die Kandidaten für Hyperparameter angegeben werden. Es enthält hier sowohl Parameter für den Vectorizer, als auch für das MultinomialNB-Modell.
+
+Bei MultinomialNB werden die Parameter alpha und fit_prior optimiert.
+Alpha gibt an, wie viel Laplace-Smoothing angewandt wird.
+Fit_prior gibt an, ob A-Priori-Wahrscheinlichkeiten gelernt werden sollen.
+
+Der TFIFD-Vectorizer kann aus den verwendeten Texten sehr unterschiedliche Tokens generieren.
+Mit dem Parameter use_idf wird angegeben, ob oft vorkommende Tokens geringer schwer gewichtet werden oder nicht.
+Ngram_range gibt an, wie viele Wörter zu einem Token zusammengefasst werden.
+Im Parameter stopwords wird optional eine Liste von zu ignorierenden Wörtern übergeben. Diese Liste wurde von https://countwordsfree.com/stopwords übernommen. Je nach Trainingsdatenlage entscheidet die Hyperparameteroptimierung, ob das sinnvoll ist.
+Als tokenizer wird bei Bedarf der von ntlk bereitgestellte WordNetLemmatizer verwendet. Dieser bildet den Stamm von konjugierten Wörtern und nutzt ihn als Token, wodurch ähnliche Wörter vergleichbarer werden. Auch hier entschiedet die Hyperparameteroptimierung, ob Lemmatisierung das Ergebnis verbessert.
+**Ergebnisse der Optimierung**
+
+| | Unoptimiert | Grid Search | Random Search |
+| --- | --- | --- | --- |
+| Precision negatives Sentiment | 76.20% | 76,99% | 77,66% |
+| Precision positives Sentiment | 77.18% | 77.15% | 77.95% |
+| Recall negatives Sentiment | 78.80% | 78.40% | 79.19% |
+| Recall positives Sentiment | 74.46% | 75.68% | 76.36% |
+| F1-Score negatives Sentiment | 77.48% | 77.69% | 78.42% |
+| F1-Score positives Sentiment | 75.80% | 76.41% | 77.14% |
+| Accuracy | 76.67% | 77.07% | 77.80% |
+
+
 ## **Auswertung**
 <img src="https://github.com/Slurbisaur/CryptoSentiment/blob/main/Data/Plots.PNG" width="1200" height="600">
 # **Fazit und Ausblick**
